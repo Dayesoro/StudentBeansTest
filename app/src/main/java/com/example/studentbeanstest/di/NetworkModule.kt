@@ -1,6 +1,6 @@
 package com.example.studentbeanstest.di
 
-import com.example.studentbeanstest.data.model.StudentBeansResponse
+import com.example.studentbeanstest.data.network.ApiServices
 import com.example.studentbeanstest.utils.Constants.BASEURL
 import dagger.Module
 import dagger.Provides
@@ -24,7 +24,7 @@ object NetworkModule {
     }
 
     @Provides
-    fun providesApiServices(retrofit: Retrofit):StudentBeansResponse = retrofit.create(StudentBeansResponse::class.java)
+    fun providesApiServices(retrofit: Retrofit): ApiServices = retrofit.create(ApiServices::class.java)
 
 
 
