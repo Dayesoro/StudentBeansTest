@@ -18,7 +18,7 @@ class StudentBeansRepository @Inject constructor(private val apiServices: ApiSer
                val response = apiServices.fetchData()
                emit(DataState.Success(response))
            }catch (e:HttpException){
-               emit(DataState.Error(e.message?:"UNKOWNED ERROR"))
+               emit(DataState.Error(e.message?:"UNKNOWN ERROR"))
            }
        }
     }
