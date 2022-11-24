@@ -1,4 +1,4 @@
-package com.example.studentbeanstest.adapter
+package com.example.studentbeanstest.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

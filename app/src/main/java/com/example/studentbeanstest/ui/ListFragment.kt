@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView.VERTICAL
-import com.example.studentbeanstest.adapter.ItemAdapter
+import com.example.studentbeanstest.ui.adapter.ItemAdapter
 import com.example.studentbeanstest.databinding.FragmentListBinding
 import com.example.studentbeanstest.utils.DataState
 import dagger.hilt.android.AndroidEntryPoint

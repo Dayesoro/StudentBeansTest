@@ -11,6 +11,13 @@ import javax.inject.Inject
 
 class StudentBeansRepository @Inject constructor(private val apiServices: ApiServices) {
 
+    /**
+     * fetch network data and return a flow of data state
+     * Loading State
+     * Data State
+     * Error State
+     * @return Flow<DataState<>>
+     */
     fun fetchData() : Flow<DataState<StudentBeansResponseList>> {
        return flow {
            emit(DataState.Loading())

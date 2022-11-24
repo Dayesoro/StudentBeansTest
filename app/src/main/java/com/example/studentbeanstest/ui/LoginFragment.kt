@@ -37,6 +37,10 @@ class LoginFragment : Fragment() {
         }
     }
 
+    /** Handles EditTextView validation
+     * Check for empty field
+     * and valid email
+     */
     private fun validation():Boolean{
         val email = binding.emailEditText.text.toString()
         val password = binding.passwordEditText.text.toString()

@@ -1,5 +1,6 @@
 package com.example.studentbeanstest.utils
 
+/** Sealed class of three network state to help handle different state of network**/
 sealed class DataState<T>(data:T?=null, isLoading:Boolean=false,error:String?=null) {
 
     data class Success<T>(val response:T):DataState<T>(data = response)
